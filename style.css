@@ -59,30 +59,28 @@ main{
     background-position: center;
     background-size: cover;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center;
+    align-items: end;
          
     z-index: 9;
 }
 
 header{
     height: auto;
-    width: 90%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background: white;
     padding: 1rem;
     border: 1px solid black;
-    border-radius: 1rem;
     text-align: center;
-    margin: 1rem;
-    position: sticky;
+    position: fixed;
     top:0;
-    bottom: 0;
-    z-index: 99;
+    z-index: 9999;
 }
+
+.header
 
 .headleft{
     display: flex;
@@ -91,6 +89,7 @@ header{
 }
 
 .headleft p i{
+    cursor: pointer;
     font-size: 2.5rem;
     font-weight: 200;
 }
@@ -164,6 +163,10 @@ header{
     }
 
     .section-2{
+        width: 100%;
+        flex-direction: column;
+        justify-content: end;
+        align-items: end;
         background-image: url(https://www.twoleavestea.com/cdn/shop/files/AlpineBerry.webp?v=1774284236&width=1280);
         background-size: cover;
         background-position: center;
@@ -172,9 +175,10 @@ header{
     }
 
     header{
-        width: 97%;
+        position: fixed;
+        top: 0;
+        width: 100%;
         padding: .5rem 1rem;
-        border-radius: .5rem;
     }
     
 
@@ -196,6 +200,14 @@ header{
         justify-content: center;
         align-items: center;
         gap: .5rem;
+    }
+
+    .headleftpcon:hover{
+        cursor: pointer;
+    }
+
+    .headleftpcon:last-child:hover{
+        border-bottom: 1.5px solid black;
     }
 
     .headleftpcon p{
@@ -220,6 +232,12 @@ header{
         width: auto;
     }
 
+    .headright span:hover{
+        cursor: pointer;
+        scale: .9;
+    }
+
+
     .headrightP{
         width: fit-content;
         font-family: roboto;
@@ -229,6 +247,11 @@ header{
         justify-content: space-between;
         align-items: center;
         gap: 1rem;
+    }
+
+    .headrightP p:hover{
+        cursor: pointer;
+         border-bottom: 1.5px solid black;
     }
 
     .hero{
